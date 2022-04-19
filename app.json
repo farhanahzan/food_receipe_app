@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "food_receipe_app",
+    "slug": "food_receipe_app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
