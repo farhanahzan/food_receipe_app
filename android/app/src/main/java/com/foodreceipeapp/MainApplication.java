@@ -1,5 +1,8 @@
 package com.foodreceipeapp;
 
+import cl.json.RNSharePackage;
+import cl.json.ShareApplication;
+
 import android.app.Application;
 import android.content.Context;
 import android.content.res.Configuration;
@@ -7,6 +10,7 @@ import androidx.annotation.NonNull;
 
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import cl.json.RNSharePackage;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -35,6 +39,7 @@ public class MainApplication extends Application implements ReactApplication {
       List<ReactPackage> packages = new PackageList(this).getPackages();
       // Packages that cannot be autolinked yet can be added manually here, for example:
       // packages.add(new MyReactNativePackage());
+      packages.add(new RNSharePackage());
       return packages;
     }
 

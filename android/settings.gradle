@@ -1,4 +1,6 @@
 rootProject.name = 'foodreceipeapp'
+include ':react-native-share'
+project(':react-native-share').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-share/android')
 
 apply from: new File(["node", "--print", "require.resolve('expo/package.json')"].execute(null, rootDir).text.trim(), "../scripts/autolinking.gradle");
 useExpoModules()
@@ -7,3 +9,6 @@ apply from: new File(["node", "--print", "require.resolve('@react-native-communi
 applyNativeModulesSettingsGradle(settings)
 
 include ':app'
+
+include ':react-native-share'
+project(':react-native-share').projectDir = new File(rootProject.projectDir,    '../node_modules/react-native-share/android')
